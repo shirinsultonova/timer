@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: dodgerblue;
+}
+
+.wrap{
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.time-input{
+    margin-right: 8px;
+    padding: 8px 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+}
+
+.btn{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.text-wrap{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 15px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    background-color: orange;
+    animation: breathing 1s linear infinite normal;
+}
+
+.red{
+    background-color: red;
+}
+
+.show{
+    display: inline-flex;
+}
+
+.hidden{
+    display: none;
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(0.9);
+    }
+
+    25% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
